@@ -15,6 +15,11 @@
     color: rgb(77, 97, 123);
 }
 
+#wrapper span {
+    position: relative;
+    left: 3%;
+}
+
 .weekdays {
     display: flex;
     justify-content: center;
