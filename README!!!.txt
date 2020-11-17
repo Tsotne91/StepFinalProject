@@ -1,0 +1,1 @@
+slick slider პლაგინის კონფიგურაცია არის შემდეგ მისამართზე js/homepage-controls.js
