@@ -8,7 +8,7 @@
 #wrapper {
     margin-top: 100px;
     padding-top: 100px;
-    height: 1700px;
+    /*height: 1700px;*/
     width: 95%;
     /*border: 1px solid black;*/
     font-size: 60px;
@@ -44,12 +44,12 @@
     justify-content: center;
     width: 100%;
     height: 250px;
-
 }
 
 .days {
     background-color: rgb(77, 97, 123);
     /*border: 2px solid black;*/
+    position:relative;
     margin: 5px;
     padding: 7px;
     width: 13%;
@@ -58,17 +58,23 @@
     font-size: 30px;
 }
 
-/*.dayFirstHalf {*/
-/*    width: 90%;*/
-/*    height: 40%;*/
-/*    border: 1px solid black;*/
-/*}*/
-/*.daySecondHalf {*/
-/*    width: 90%;*/
-/*    height: 40%;*/
-/*    border: 1px solid black;*/
+.firstHalf {
+    width: 90%;
+    height: 40%;
+    /*border: 1px solid black;*/
+}
+.secondHalf {
+    width: 90%;
+    height: 40%;
+    /*border: 1px solid black;*/
+}
+.TenAMtoNoon, .NoonTo2PM, .TwoPMTo4PM, .FourPMTo6PM {
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+   }
 
-/*}*/
+
 .days:hover {
     background-color: #253141;
     cursor:pointer;
@@ -97,5 +103,4 @@
     height: auto;
     color: white;
     font-size: 30px;
-
 }
