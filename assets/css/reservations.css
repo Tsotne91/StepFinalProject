@@ -102,9 +102,11 @@
 
 .slotReserved {
     background-color: #bfb410;
+    pointer-events: none;
 }
 .dayReserved {
     background-color: red;
+    pointer-events: none;
 }
 .extraDays {
     background-color: rgb(144, 167, 194);
