@@ -1,9 +1,6 @@
-header{
-    position: sticky;
-}
 #wrapper {
     color: rgb(77, 97, 123);
-    padding: 50px;
+    padding: 150px 50px 50px;
 }
 
 #wrapper h1 {
@@ -39,7 +36,6 @@ header{
     margin: 5px;
     color: white;
     font-size: 30px;
-
     position:relative;
 }
 .days {
@@ -47,6 +43,9 @@ header{
 }
 .days>span {
     padding: 5px;
+    display: inline-block;
+    width: 100%;
+    background-color: black;
 }
 
 .extraDays {
@@ -56,6 +55,9 @@ header{
 .days:hover {
     background-color: #253141;
     cursor: pointer;
+}
+.days:hover .reserved{
+    background-color: black;
 }
 
 .slots {
@@ -94,5 +96,13 @@ header{
     }
     .weekdays {
         display: none;
+    }
+}
+@media (max-width: 500px) {
+    #wrapper h1{
+    font-size: 20px;
+}
+    .mobileWeekdays{
+        font-size: 18px;
     }
 }
