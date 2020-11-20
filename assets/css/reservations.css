@@ -12,7 +12,6 @@ header{
 
 .weekdays {
     display: none;
-    justify-content: center;
 }
 .mobileWeekdays {
     display: flex;
@@ -70,5 +69,8 @@ header{
     }
     .weekdays{
         display: flex;
+    }
+    .mobileWeekdays {
+        display: none;
     }
 }
