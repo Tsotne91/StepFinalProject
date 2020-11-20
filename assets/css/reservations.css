@@ -38,11 +38,14 @@ header{
     margin: 5px;
     color: white;
     font-size: 30px;
-    padding: 5px;
+
     position:relative;
 }
 .days {
     background-color: rgb(77, 97, 123);
+}
+.days>span {
+    padding: 5px;
 }
 
 .extraDays {
