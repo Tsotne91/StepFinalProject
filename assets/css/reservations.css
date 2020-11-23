@@ -1,5 +1,5 @@
 #wrapper {
-    color: rgb(77, 97, 123);
+    color: var(--main-color);
     padding: 150px 50px 50px;
 }
 
@@ -7,6 +7,10 @@
     padding: 20px;
     font-size: 60px;
 }
+
+:root {
+    --cal-background: rgb(77, 97, 123);
+  }
 
 .weekdays {
     display: none;
@@ -39,7 +43,7 @@
     position:relative;
 }
 .days {
-    background-color: rgb(77, 97, 123);
+    background-color: var(--cal-background);
 }
 .days>span {
     padding: 5px;
@@ -53,7 +57,7 @@
 }
 
 .days:hover {
-    background-color: #253141;
+    background-color: var(--main-color);
     cursor: pointer;
 }
 .days:hover .reserved{
@@ -66,7 +70,7 @@
     padding: 8px;
 }
 .reserved {
-    background-color: #253141;
+    background-color: var(--main-color);
 }
 
 @media (min-width: 769px) {
