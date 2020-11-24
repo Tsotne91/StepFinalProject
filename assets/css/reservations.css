@@ -30,12 +30,14 @@
 }
 
 .weeks {
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .days, .extraDays {
+    height: 200px;
     flex: 1;
     margin: 5px;
     color: white;
@@ -52,6 +54,21 @@
     background-color: black;
 }
 
+.days>span:hover {
+    cursor: auto;
+}
+
+.button {
+    color: white;
+    float: right;
+    position: relative;
+    top: 8px;
+    font-size: 35px;
+}
+.button:hover {
+    cursor: pointer;
+}
+
 .extraDays {
     background-color: rgb(144, 167, 194);
 }
@@ -65,6 +82,7 @@
 }
 
 .slots {
+    display: none;
     border-top: 1px solid darkgray;
     font-size: 12px;
     padding: 8px;
