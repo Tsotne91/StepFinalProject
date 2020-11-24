@@ -82,11 +82,15 @@
 }
 
 .slots {
-    display: none;
     border-top: 1px solid darkgray;
     font-size: 12px;
     padding: 8px;
 }
+
+.slot-wrapper{
+    display: none;
+}
+
 .reserved {
     background-color: var(--main-color);
 }
