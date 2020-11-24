@@ -1,16 +1,15 @@
     let buttons = document.querySelectorAll(".button");
-    let days = document.querySelectorAll(".days");
+    // let days = document.querySelectorAll(".days");
     let slots = document.querySelectorAll(".slot-wrapper");
 
-function animate () {
 
-            for (let i = 0; i < days.length; i++) {
-                days[i].style.height = "auto";
+    for ( let i = 0; i < buttons.length; i++){
+        let button = buttons[i];
+        function animate () {
+                button.parentElement.parentElement.style.height = "auto";
                 slots[i].style.display = "block";
-            }
-}
 
-    for ( let j = 0; j < buttons.length; j++){
-        let button = buttons[j];
+        }
         button.addEventListener("click", animate);
     }
+
