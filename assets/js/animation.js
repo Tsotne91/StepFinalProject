@@ -2,7 +2,6 @@
     // let days = document.querySelectorAll(".days");
     let slots = document.querySelectorAll(".slot-wrapper");
 
-
     for ( let i = 0; i < buttons.length; i++){
         let button = buttons[i];
         function animate () {
@@ -12,4 +11,3 @@
         }
         button.addEventListener("click", animate);
     }
-
