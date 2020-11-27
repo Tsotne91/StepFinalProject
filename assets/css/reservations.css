@@ -30,7 +30,7 @@
 }
 
 .weeks {
-    height: 550px;
+    /*height: 550px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,6 +56,18 @@
 
 .days>span:hover {
     cursor: auto;
+}
+.openDay {
+    height: auto;
+}
+
+.openDay .button {
+    transform: rotate(180deg);
+}
+
+
+.openDay .slot-wrapper {
+    display: block;
 }
 
 .button {
@@ -131,4 +143,8 @@
     .mobileWeekdays{
         font-size: 18px;
     }
+
+    /*.days {*/
+    /*margin-top: 100px;*/
+    /*}*/
 }

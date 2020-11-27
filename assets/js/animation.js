@@ -1,13 +1,24 @@
     let buttons = document.querySelectorAll(".button");
-    // let days = document.querySelectorAll(".days");
-    let slots = document.querySelectorAll(".slot-wrapper");
 
-    for ( let i = 0; i < buttons.length; i++){
-        let button = buttons[i];
-        function animate () {
-                button.parentElement.parentElement.style.height = "auto";
-                slots[i].style.display = "block";
+       buttons.forEach(
+           function(button){
+                    button.addEventListener("click", function () {
+                            let day = button.parentElement.parentElement;
+                         if (day.classList.contains("openDay")) {
+                                 day.classList.remove("openDay");
+                          } else {
+                                 day.classList.add("openDay");
+                                  }
+                          });
+                 });
 
-        }
-        button.addEventListener("click", animate);
-    }
+
+    // for ( let i = 0; i < buttons.length; i++){
+    //     let button = buttons[i];
+    //     function animate () {
+    //             button.parentElement.parentElement.style.height = "auto";
+    //             slots[i].style.display = "block";
+    //
+    //     }
+    //     button.addEventListener("click", animate);
+    // }
