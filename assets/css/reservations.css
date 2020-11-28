@@ -106,6 +106,9 @@
 .reserved {
     background-color: var(--main-color);
 }
+.reserved:hover {
+    cursor: auto;
+}
 
 @media (min-width: 769px) {
     .weeks{
