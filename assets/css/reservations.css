@@ -12,6 +12,18 @@
     --cal-background: rgb(77, 97, 123);
   }
 
+#instructions .reserved{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+#instructions .reserved>span {
+    display: inline-block;
+    height: 45px;
+    width: 200px;
+    background-color: black;
+}
+
 .weekdays {
     display: none;
 }
@@ -65,7 +77,6 @@
     transform: rotate(180deg);
 }
 
-
 .openDay .slot-wrapper {
     display: block;
 }
@@ -92,6 +103,10 @@
 .days:hover .reserved{
     background-color: black;
 }
+
+/*.reserved:hover {*/
+/*    background-color: black;*/
+/*}*/
 
 .slots {
     border-top: 1px solid darkgray;
