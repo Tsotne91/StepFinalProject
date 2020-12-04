@@ -50,6 +50,8 @@
 
 .days, .extraDays {
     height: 200px;
+    max-height: 200px;
+    overflow: hidden;
     flex: 1;
     margin: 5px;
     color: white;
@@ -58,6 +60,7 @@
 }
 .days {
     background-color: var(--cal-background);
+    transition: max-height 2s;
 }
 .days>span {
     padding: 5px;
@@ -71,6 +74,7 @@
 }
 .openDay {
     height: auto;
+    max-height: 600px;
 }
 
 .openDay .button {
