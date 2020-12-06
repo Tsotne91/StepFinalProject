@@ -54,7 +54,7 @@
 }
 
 .days, .extraDays {
-    height: 200px;
+    min-height: 200px;
     max-height: 200px;
     overflow: hidden;
     flex: 1;
@@ -65,7 +65,7 @@
 }
 .days {
     background-color: var(--cal-background);
-    transition: max-height 2s;
+    transition: max-height 1.5s;
 }
 .days>span {
     padding: 5px;
@@ -78,7 +78,7 @@
     cursor: auto;
 }
 .openDay {
-    height: auto;
+    min-height: auto;
     max-height: 600px;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .openDay .slot-wrapper {
-    display: block;
+    opacity: 1;
 }
 
 .button {
@@ -124,7 +124,8 @@
 }
 
 .slot-wrapper{
-    display: none;
+    opacity: 0;
+    transition: opacity 1.5s;
 }
 
 .reserved {
