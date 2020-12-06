@@ -150,6 +150,17 @@
     background-color: rgba(0,0,0,0.4);
 }
 
+.modalSelect {
+    text-align: start;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.modalSelect select {
+    float: right;
+    font-size: 18px;
+    height: 100%;
+    width: 55%;
+}
 .openModal {
     display: flex;
 }
@@ -172,7 +183,6 @@ form {
     font-size: 20px;
 }
 form input{
-    margin: 5px;
     display: block;
     height: 35px;
     width: 200px;
