@@ -9,18 +9,21 @@ buttons.forEach(button=>{
 });
 // modal window
 // Get the modal window
-const modal = document.querySelectorAll(".myModal")[0];
+const modal = document.querySelector(".myModal");
 // Get days' that should be clicked to open the modal
 const days = document.querySelectorAll(".days:not(.reserved)");
 // Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close")[0];
+const span = document.querySelector(".close");
 const openDay = document.getElementsByClassName ("openDay");
 
 days.forEach( day => {
             day.addEventListener("click", () => {
-            if (day.classList.contains("openDay"))  modal.classList.add("openModal");
+             modal.classList.add("openModal");
             })
      });
+
+
+
 span.onclick = function () {
     modal.classList.remove("openModal");
 };
