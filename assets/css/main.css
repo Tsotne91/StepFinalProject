@@ -9,19 +9,18 @@
 footer div, footer a, header li a{
     color: white;
 }
-
-:root {
-    --white: #ffffff;
-    --main-color: rgb(37, 49, 65);
-    --gf-size: 18px;
-}
 header:hover{
-    background-color: rgba(37, 49, 65, 1);
+    background-color: var(--main-color);
     transition: 1s;
 }
 
 #arrow-icon {
     display: none;
+}
+.active-nav {
+	font-size: 120%;
+	color:#bfbfbf;
+    font-weight: 900;
 }
 
 /************* Header and navigation *********/
@@ -29,11 +28,12 @@ header:hover{
 header {
    color: white;
    position: fixed;
-   z-index: 10000;
+   z-index: 1;
    width: 100%;
 }
 
 .read-btn {
+    margin-top: 15px;
     padding: 15px;
     cursor: pointer;
     background-color: var(--main-color);
@@ -89,7 +89,6 @@ header nav {
 }
 
 .flag {
-    width: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,8 +120,8 @@ header nav {
 /************* Main *********/
 
 main {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
     min-height: calc(100vh - 80px);
     padding-top: 130px;
 }
@@ -162,9 +161,11 @@ footer #social-media a i:hover {
 /************* Responsive design *********/
 
 @media(max-width: 540px) {
-
+    .nav-links li a{
+        font-weight: 900;
+    }
     header nav {
-        background-color: rgba(37, 49, 65, 0.5);
+        background-color: rgb(37, 49, 65, 0.5);
         display: flex;
         justify-content: space-between;
     }
@@ -195,7 +196,7 @@ footer #social-media a i:hover {
         flex-direction: column;
         display: none;
         padding-bottom: 10px;
-        height: 0;
+        height: 0px;
     }
 
     .mobile-nav {
@@ -205,6 +206,7 @@ footer #social-media a i:hover {
         padding-bottom: 10px;
         min-height: 430px;
         position: absolute;
+        z-index: 2;
         top: 82px;
         transform: translateY(-700px);
         width: 100%;
@@ -266,28 +268,91 @@ footer #social-media a i:hover {
     }
 }
 
-@media(width: 768px) {
+@media(max-width: 1023px) {
+    .nav-links li a{
+        font-weight: 900;
+    }
+    header nav {
+        background-color: rgb(37, 49, 65, 0.5);
+        display: flex;
+        justify-content: space-between;
+    }
+    #arrow-icon {
+        display: block;
+        font-size: 60px;
+        text-align: center;
+        margin: auto;
+        width: 70px;
+        transition: 1s ease-out;
+    }
+
+    .upwards {
+        /* transition: 0.5s ease-out; */
+        transform: rotateX(180deg);
+    }
+
+    header {
+        background-color: var(--main-color);
+    }
+
     #filler {
         display: none;
     }
 
-    .nav-links li {
-        padding: 8px;
+    header nav {
+        align-items: center;
+        flex-direction: column;
+        display: none;
+        padding-bottom: 10px;
+        height: 0px;
     }
 
-    .nav-links li a {
-        font-size: 0.9em;
+    .slideDown {
+        transform: translateY(-700px);
+        animation: slideDown 0.5s linear forwards;
     }
 
-    .nav-links {      
-        margin-left: 15px;
+    @keyframes slideDown {
+        0% {
+            transform: translateY(-700px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
     }
 
-    .flag img {
-        width: 30px;
+    .slideUp {
+        transform: translateY(0px);
+        animation: slideUp 0.5s linear forwards;
+    }
+
+    @keyframes slideUp {
+        0% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(-700px);
+        }
+    }
+
+    .nav-links {     
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
     }
 
     .language-panel {
-        margin-right: 15px;
-    } 
+        margin-top: 18px;
+        height: 250px;
+        flex-direction: column;
+    }
+
+    .flag {
+        padding: 0px;
+    }
 }

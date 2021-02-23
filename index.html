@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/variables.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/home.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/slick-slider/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/plugins/slick-slider/slick/slick-theme.css"/>
     <title>Document</title>
+    <style type="text/css">
+        .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+    </style>
 </head>
 <body>
-    <header>
+     <header>
         <div id="arrow-icon">
             <i class="fa fa-angle-double-down"></i>
         </div>
@@ -20,128 +27,113 @@
 
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Prices</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html" class="active-nav">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="language-panel">
-                <div class="flag"><img src="assets/images/us.svg" alt="en"></div>
-                <div class="flag active"><img src="assets/images/ge.svg" alt="geo"></div>
-                <div class="flag"><img src="assets/images/ru.svg" alt="ru"></div>
+                <div class="flag active"><img src="assets/images/static/us.svg" alt="en"></div>
+                <div class="flag"><img src="assets/images/static/ge.svg" alt="geo"></div>
+                <div class="flag"><img src="assets/images/static/ru.svg" alt="ru"></div>
             </div>
         </nav>
 
         <nav class="mobile-nav">
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Prices</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html" class="active-nav">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="language-panel">
-                <div class="flag"><img src="assets/images/us.svg" alt="en"></div>
-                <div class="flag active"><img src="assets/images/ge.svg" alt="geo"></div>
-                <div class="flag"><img src="assets/images/ru.svg" alt="ru"></div>
+                <div class="flag active"><img src="assets/images/static/us.svg" alt="en"></div>
+                <div class="flag"><img src="assets/images/static/ge.svg" alt="geo"></div>
+                <div class="flag"><img src="assets/images/static/ru.svg" alt="ru"></div>
             </div>
         </nav>
     </header>
 
     <main>
-       <section class="home">
-           <div class="slide-and-text-cont">
+        <section>
             <div class="slideshow-container">
-
-                <div class="mySlides">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="assets/images/nature1.jpg" сlass="slideImg">
-                  <div class="text">Caption Text</div>
+                <div class="main-slider-item">
+                    <a href="#"><img src="assets/images/nature1.jpg" alt=""></a>
                 </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="assets/images/nature2.jpg" сlass="slideImg">
-                  <div class="text">Caption Two</div>
+                <div class="main-slider-item">
+                    <a href="#">
+                        <img src="assets/images/nature2.jpg" alt="">
+                    </a>
                 </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="assets/images/nature3.jpg" сlass="slideImg">
-                  <div class="text">Caption Three</div>
+                <div class="main-slider-item">
+                    <a href="#">
+                        <img src="assets/images/nature3.jpg" alt="">
+                    </a>
                 </div>
-                
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>
-                
+                <div class="main-slider-item">
+                    <a href="#">
+                        <img src="assets/images/nature4.jpg" alt="">
+                    </a>
                 </div>
-                <br>
-
-                <div class="slider__text-cont">
-                    <h2>Lorem</h2>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore optio aut sint. Laudantium ex reprehenderit rem atque veritatis omnis tempore voluptatibus quam quod eligendi, perferendis suscipit! Sed vitae quia labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore sint fugit dolore, labore iusto voluptatibus quibusdam itaque nostrum quidem aut accusamus cupiditate quaerat, delectus eos qui animi, asperiores corporis. Eligendi.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <div class="main-slider-item" alt="">
+                    <a href="#">
+                        <img src="assets/images/nature1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="main-slider-item">
+                    <a href="#">
+                        <img src="assets/images/nature2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="main-slider-item">
+                    <a href="#">
+                        <img src="assets/images/nature3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="main-slider-item">
+                    <a href="#">
+                        <img src="assets/images/nature4.jpg" alt="">
+                    </a>
+                </div>
+            </div> 
+        </section>
+        <section id="about-me-wrapper">
+            <h1>About Me</h1>
+            <div id="about">
+                <div id="about-photo-item">
+                    <img src="assets/images/owner.jpg" alt="">
+                </div>
+                <div id="about-text-item">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                    <button class="read-btn">Read more</button>
-                </div>        
-           </div>
-       </section>
-              <section class="home">
-           <div class="slide-and-text-cont">
-            <div class="slideshow-container">
-
-                <div class="mySlides">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="assets/images/nature1.jpg" сlass="slideImg">
-                  <div class="text">Caption Text</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="assets/images/nature2.jpg" сlass="slideImg">
-                  <div class="text">Caption Two</div>
-                </div>
-                
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="assets/images/nature3.jpg" сlass="slideImg">
-                  <div class="text">Caption Three</div>
-                </div>
-                
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>
-                
-                </div>
-                <br>
-
-                <div class="slider__text-cont">
-                    <h2>Lorem</h2>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore optio aut sint. Laudantium ex reprehenderit rem atque veritatis omnis tempore voluptatibus quam quod eligendi, perferendis suscipit! Sed vitae quia labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore sint fugit dolore, labore iusto voluptatibus quibusdam itaque nostrum quidem aut accusamus cupiditate quaerat, delectus eos qui animi, asperiores corporis. Eligendi.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                    <button class="read-btn">Read more</button>
-                </div>        
-           </div>
-       </section>
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <footer>
@@ -155,8 +147,8 @@
     </footer>
 </body>
 <script src="assets/js/app.js"></script>
-<script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="assets/plugins/slick-slider/slick/slick.min.js"></script>
-<script type="text/javascript" src="assets/js/homepage-controls.js"></script>
+<script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="assets/plugins/slick-slider/slick/slick.min.js"></script>
+<script src="assets/js/homepage-controls.js"></script>
 </html>
