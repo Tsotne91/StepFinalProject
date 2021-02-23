@@ -1,0 +1,56 @@
+/************* PRICE TABLE *********/
+.container{
+    display: inline-block;
+    width: 100%;
+margin-top: 7.5%;
+}
+.columns {
+    margin-top: 3%;
+    margin-left: 2%;
+  float: left;
+  width: 30%;
+  padding: 16px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+}
+
+.price {
+  list-style-type: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,1)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  padding: 20px;
+  text-align: center;
+}
+
+.button {
+  background-color: #3C5793;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+.button:hover{
+    background-color: #111;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+

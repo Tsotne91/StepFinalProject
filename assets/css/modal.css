@@ -1,0 +1,38 @@
+.bod-modal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blockk {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: auto;
+    
+}
+.modal-image {
+    width:100%;
+    height: auto;
+}
+.bodNavLinks {
+    display: none;
+}
+@media (max-width:1024px){
+    .bod-modal{
+    padding-bottom: 10px;
+    }
+}
+@media (max-width:540px) {
+     main {
+             margin-left: 0;
+             margin-right: 0;
+        }
+        .bod-modal{
+            padding-bottom: 10px;
+        }
+        .blockk{
+            width: 130px;
+        }
+    }

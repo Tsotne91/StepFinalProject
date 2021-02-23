@@ -1,0 +1,71 @@
+header{
+    position: sticky;
+}
+#wrapper {
+    color: rgb(77, 97, 123);
+}
+
+#wrapper h1 {
+    padding: 20px;
+    font-size: 60px;
+}
+
+.weekdays {
+    display: none;
+    justify-content: center;
+}
+
+.weekdays div {
+    flex: 1;
+    font-size: 35px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.weeks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.weeks span {
+    display: none;
+}
+.days, .extraDays {
+    flex: 1;
+    margin: 5px;
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    position:relative;
+    /*border: 2px solid black;*/
+}
+.days {
+    background-color: rgb(77, 97, 123);
+}
+
+.extraDays {
+    background-color: rgb(144, 167, 194);
+}
+
+.days:hover {
+    background-color: #253141;
+    cursor:pointer;
+}
+
+.slots {
+    border-top: 1px solid darkgray;
+    font-size: 12px;
+    padding: 8px;
+}
+.reserved {
+    background-color: #253141;
+}
+
+@media (min-width: 768px) {
+    .weeks{
+        flex-direction: row;
+    }
+    .weekdays{
+        display: flex;
+    }
+}
