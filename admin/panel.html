@@ -129,35 +129,16 @@
             <div id="about">
                 <div id="filler"></div>
                 <div id="about-photo-item">
-                    <input type="file"><button style="font-size:24px">Upload <i class="fa fa-upload" style="font-size:24px"></i></button>
+                    <input type="file" id="upload" hidden/>
+                    <label for="upload" class="fa fa-upload" id="upload-button"> Upload</label>
                     <img src="../assets/images/owner.jpg" alt="">
                 </div>
                 <div id="about-text-item">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <label for="about-input">Edit:</label>
+                    <input type="text" class="tinymce" id="about-input">
+                    <button id="save-button">Save <i class="fa fa-save"></i></button>
                 </div>
+
             </div>
         </section>
     </main>
@@ -167,4 +148,7 @@
 <script src="../assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script src="../assets/plugins/slick-slider/slick/slick.min.js"></script>
 <script src="assets/js/slideshow.js"></script>
+<script src="assets/additional-plugins/tinymce/jquery.tinymce.min.js"></script>
+<script src="assets/additional-plugins/tinymce/tinymce.min.js"></script>
+<script src="assets/js/tinymce.configs.js"></script>
 </html>
