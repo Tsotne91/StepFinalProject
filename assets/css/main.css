@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Comic Sans MS";
@@ -196,7 +196,7 @@ footer #social-media a i:hover {
         flex-direction: column;
         display: none;
         padding-bottom: 10px;
-        height: 0px;
+        height: 0;
     }
 
     .mobile-nav {
@@ -244,10 +244,7 @@ footer #social-media a i:hover {
 
     .nav-links {     
         width: 100%;
-        margin-left: 0px;
-    }
-    
-    .nav-links {
+        margin-left: 0;
         flex-direction: column;
     }
 
@@ -258,7 +255,7 @@ footer #social-media a i:hover {
     }
 
     .flag {
-        padding: 0px;
+        padding: 0;
     }
 
     footer {
@@ -353,6 +350,6 @@ footer #social-media a i:hover {
     }
 
     .flag {
-        padding: 0px;
+        padding: 0;
     }
 }

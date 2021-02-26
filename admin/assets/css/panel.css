@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -27,8 +27,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -129,8 +129,7 @@
     cursor: pointer;
 }
 
-
-#filler {
+#filler_bottom {
     width: 150px;
 }
 #about-photo-item{

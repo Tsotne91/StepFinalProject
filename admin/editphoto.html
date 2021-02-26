@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/variables.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/panel.css">
     <title>Update Photo</title>
     <style>
-        * {
-            margin: 10px;
-        }
-        body {
+        main {
             text-align: center;
         }
         img {
@@ -17,12 +17,15 @@
         }
         input {
             width: 30vw;
+            height: 2vw;
         }
-        button {
+        button, #upload-button{
             font-size: 20px;
             background-color: rgb(37,49,65);
             color: white;
             border-radius: 15px;
+            padding: 10px;
+            margin: 15px;
         }
         button:hover {
             cursor: pointer;
@@ -30,9 +33,47 @@
     </style>
 </head>
 <body>
-<button style="font-size:15px">Upload <i class="fa fa-upload" style="font-size:24px"></i></button><br>
-<img src="img/main.jpg"><br>
+
+<div class="sidebar">
+    <ul>
+        <li>
+            <a href="../index.html">
+                <span><i class="fa fa-home"></i></span>
+                <span>Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="../portfolio.html">
+                <span><i class="fa fa-image"></i></span>
+                <span>Portfolio</span>
+            </a>
+        </li>
+        <li>
+            <a href="../reservations.html">
+                <span><i class="fa fa-edit"></i></span>
+                <span>Reservations</span>
+            </a>
+        </li>
+        <li>
+            <a href="../prices.html">
+                <span>₾</span>
+                <span>Prices</span>
+            </a>
+        </li>
+        <li>
+            <a href="../contact.html">
+                <span><i class="fa fa-envelope"></i></span>
+                <span>Contact</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<main>
+    <input type="file" id="upload" hidden/>
+    <label for="upload" class="fa fa-upload" id="upload-button"> Upload</label><br>
+<img src="img/main.jpg" alt="main-photo"><br>
     <input type="url" placeholder="Insert link here"><br>
-<button>Save <i class="fa fa-save"></i></button>
+<button><i class="fa fa-save"> Save</i></button>
+</main>
 </body>
 </html>
