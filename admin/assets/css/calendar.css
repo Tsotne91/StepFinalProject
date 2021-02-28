@@ -1,0 +1,139 @@
+#wrapper {
+    color: var(--main-color);
+    padding: 150px 50px 50px;
+    width: 85%;
+    float: right;
+}
+#wrapper h1 {
+    padding: 20px;
+    font-size: 60px;
+}
+:root {
+    --cal-background: rgb(77, 97, 123);
+}
+.days, .extraDays {
+    min-height: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    flex: 1;
+    margin: 5px;
+    color: white;
+    font-size: 30px;
+    position:relative;
+}
+.days {
+    background-color: var(--cal-background);
+    transition: max-height 1.5s;
+}
+.days>span {
+    padding: 5px;
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+}
+.days>span:hover {
+    cursor: auto;
+}
+.openDay {
+    min-height: auto;
+    max-height: 600px;
+}
+.openDay .button {
+    transform: rotate(180deg);
+}
+.openDay .slot-wrapper {
+    opacity: 1;
+}
+.button {
+    color: white;
+    float: right;
+    position: relative;
+    top: 8px;
+    font-size: 35px;
+}
+.button:hover {
+    cursor: pointer;
+}
+.extraDays {
+    background-color: rgb(144, 167, 194);
+}
+.days:hover {
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.days:hover .reserved{
+    background-color: black;
+}
+.slots {
+    border-top: 1px solid darkgray;
+    font-size: 12px;
+    padding: 8px;
+}
+.slot-wrapper{
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.reserved {
+    background-color: var(--main-color);
+}
+.reserved:hover {
+    cursor: auto;
+}
+.weeks{
+        display: flex;
+        flex-direction: row;
+}
+.weekdays{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 30;
+}
+.weekdays div {
+        flex: 1;
+        font-size: 30px;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 15px;
+        font-weight: bold;
+}
+table {
+    width: 80%;
+    border: solid black 1px;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    position: relative;
+    left: 17vw;
+    text-align: center;
+}
+
+th, td {
+    border-bottom: solid black 1px;
+    height: 4vw;
+}
+td input {
+    position: relative;
+    right: 33px;
+}
+
+#selectAll {
+    position: relative;
+    right: 15px;
+}
+.approve-button, .decline-button {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid black 1px;
+}
+.approve-button {
+    color: #0ca70c;
+}
+.decline-button {
+    color: #c60101;
+    padding-bottom: 3px;
+
+}
