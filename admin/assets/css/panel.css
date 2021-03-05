@@ -4,14 +4,22 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
 .admin-menu {
     position: absolute;
     top: 10px;
     right: 40px;
     cursor: pointer;
 }
-
+#add-photo{
+    width: 40px;
+    position: relative;
+    font-size: 36px;
+    left: 50%;
+    top: 1vw;
+}
+#add-photo:hover {
+    cursor: pointer;
+}
 .pic-holder {
     width: 70px;
 	height: 70px;
@@ -67,6 +75,7 @@
 
 .show {
     display: block;
+    z-index: 6;
 }
 .slideshow-container {
     display: flex;
@@ -106,9 +115,10 @@
     margin-top: 100px;
 }
 #about-text-item{
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    width: 40%;
+    padding: 2%;
+    width: 50%;
+    /*position: relative;*/
+    /*right: 5vw;*/
 }
 #about-text-item label {
     font-size: 24px;
@@ -135,8 +145,8 @@
 #about-photo-item{
     width: 25%;
     height: auto;
-    /*position: relative;*/
-    /*left: 20vw;*/
+    position: relative;
+    left: 5vw;
 }
 #about-photo-item > :first-child {
     margin-bottom: 3px;

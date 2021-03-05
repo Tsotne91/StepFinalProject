@@ -57,10 +57,10 @@
 .extraDays {
     background-color: rgb(144, 167, 194);
 }
-.days:hover {
-    background-color: var(--main-color);
-    cursor: pointer;
-}
+/*.days:hover {*/
+/*    background-color: var(--main-color);*/
+/*    cursor: pointer;*/
+/*}*/
 .days:hover .reserved{
     background-color: black;
 }
@@ -89,7 +89,7 @@
         background-color: white;
         position: sticky;
         top: 0;
-        z-index: 30;
+        z-index: 5;
 }
 .weekdays div {
         flex: 1;

@@ -67,6 +67,8 @@
                 <li><a href="#"><span><i class="fa fa-sign-out"></i></span><span>Logout</span></a></li>
             </ul>
         </div>
+        <input type="file" id="add-photo-slideshow" hidden/>
+        <label for="add-photo-slideshow" class="fa fa-plus-square" id="add-photo" ></label>
         <div class="slideshow-container">
             <div class="main-slider-item">
 
@@ -130,9 +132,9 @@
             <div id="about">
                 <div id="filler_bottom"></div>
                 <div id="about-photo-item">
-                    <input type="file" id="upload" hidden/>
+                    <input type="file" accept="image/*" onchange="preview_image(event)" id="upload" hidden/>
                     <label for="upload" class="fa fa-upload" id="upload-button"> Upload</label>
-                    <img src="../assets/images/owner.jpg" alt="">
+                    <img id="output_image" src="../assets/images/owner.jpg" alt="">
                 </div>
                 <div id="about-text-item">
                     <label for="about-input">Edit:</label>
