@@ -104,11 +104,21 @@ table {
     border: solid black 1px;
     border-collapse: collapse;
     margin-bottom: 50px;
-    position: relative;
-    left: 17vw;
+    float: right;
+    margin-right: 15px;
+    /*position: relative;*/
+    /*left: 18vw;*/
     text-align: center;
+    font-size: 20px;
 }
-
+input [type="checkbox"] {
+    float: right;
+    margin-left: 50%;
+}
+th {
+    background-color: var(--cal-background);
+    color: white;
+}
 th, td {
     border-bottom: solid black 1px;
     height: 4vw;

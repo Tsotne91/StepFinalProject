@@ -1,3 +1,5 @@
+//Calendar day opening animation
+
 document.querySelectorAll(".button").forEach(button=>{
     button.addEventListener("click", ()=>{
         const day = button.parentElement.parentElement;
@@ -6,8 +8,11 @@ document.querySelectorAll(".button").forEach(button=>{
     });
 });
 
+//Select all checkbox functionality
+
 let checkboxes =  document.querySelectorAll(".checkbox");
 let select_all = document.querySelector("#selectAll");
     select_all.addEventListener("change", () => {
         for (let checkbox of checkboxes) checkbox.checked = !!select_all.checked;
     })
+
