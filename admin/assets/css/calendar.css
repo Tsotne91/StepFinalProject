@@ -1,7 +1,7 @@
 #wrapper {
     color: var(--main-color);
-    padding: 150px 50px 50px;
-    width: 85%;
+    padding: 150px 50px 60px;
+    width: 84%;
     float: right;
 }
 #wrapper h1 {
@@ -100,7 +100,7 @@
         font-weight: bold;
 }
 table {
-    width: 80%;
+    width: 82%;
     border: solid black 1px;
     border-collapse: collapse;
     margin-bottom: 50px;
