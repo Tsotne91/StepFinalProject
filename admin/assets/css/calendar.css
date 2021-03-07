@@ -106,31 +106,19 @@ table {
     margin-bottom: 50px;
     float: right;
     margin-right: 10px;
-    /*position: relative;*/
-    /*left: 18vw;*/
     text-align: center;
     font-size: 0.9rem;
-}
-input [type="checkbox"] {
-    float: right;
-    margin-left: 50%;
 }
 th {
     background-color: var(--cal-background);
     color: white;
 }
+th:first-child, td:first-child {
+    padding-left: 5px;
+}
 th, td {
     border-bottom: solid black 1px;
     height: 4vw;
-}
-td input {
-    position: relative;
-    right: 33px;
-}
-
-#selectAll {
-    position: relative;
-    right: 15px;
 }
 .approve-button, .decline-button {
     width: 27px;
@@ -145,5 +133,4 @@ td input {
 .decline-button {
     color: #c60101;
     padding-bottom: 3px;
-
 }
