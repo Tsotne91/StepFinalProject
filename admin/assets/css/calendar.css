@@ -99,6 +99,36 @@
         padding: 15px;
         font-weight: bold;
 }
+
+.status-filter {
+    margin-left: 17vw;
+    font-family: Arial, serif;
+    float: left;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.date-filter {
+    margin-left: 1vw;
+    float: left;
+    padding: 1rem;
+}
+.date-filter select{
+    position: relative;
+    bottom: 10px;
+}
+.status-filter select {
+    position: relative;
+    bottom: 10px;
+    right: 7px;
+}
+.status-filter select, .date-filter select {
+    width: 8.5rem;
+    height: 3rem;
+    background-color: #4D617B;
+    color: white;
+    font-size: 20px;
+}
+
 table {
     width: 82%;
     border: solid black 1px;

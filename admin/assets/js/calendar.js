@@ -16,3 +16,5 @@ let select_all = document.querySelector("#selectAll");
         for (let checkbox of checkboxes) checkbox.checked = !!select_all.checked;
     })
 
+//select-dropdown:
+

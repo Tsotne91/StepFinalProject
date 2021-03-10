@@ -19,7 +19,6 @@
     </style>
 </head>
 <body>
-
     <main>
         <div class="sidebar">
             <ul>
@@ -67,8 +66,18 @@
                 <li><a href="#"><span><i class="fa fa-sign-out"></i></span><span>Logout</span></a></li>
             </ul>
         </div>
-        <input type="file" id="add-photo-slideshow" hidden/>
-        <label for="add-photo-slideshow" class="fa fa-plus-square" id="add-photo" ></label>
+            <div class="fa fa-plus-square" id="add-photo"></div>
+            <div class="myModal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <label for="photo-link"></label>
+                    <input type="url" id="photo-link" name="photo-link" placeholder="Insert Photo Link Here">
+                    <label for="upload-photo">Upload photo:</label>
+                    <input type="file" id="upload-photo">
+                    <button>submit</button>
+                </div>
+            </div>
+
         <div class="slideshow-container">
             <div class="main-slider-item">
 

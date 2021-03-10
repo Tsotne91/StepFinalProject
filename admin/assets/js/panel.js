@@ -28,3 +28,21 @@ function preview_image(event) {
     }
     reader.readAsDataURL(event.target.files[0]);
 }
+
+// onclick modal
+
+// Get the modal window
+const modal = document.querySelector(".myModal");
+document.querySelector("#add-photo").onclick = function (){
+    modal.classList.add("openModal")
+};
+document.querySelector(".close").onclick = function () {
+    modal.classList.remove("openModal");
+};
+
+//optional function:
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// };

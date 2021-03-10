@@ -687,6 +687,23 @@
 </div>
 
 
+    <div class="status-filter">
+        <select>
+            <option value="status">Status:</option>
+            <option value="pending">Pending</option>
+            <option value="approved">Approved</option>
+            <option value="rejected">Rejected</option>
+            <option value="completed">Completed</option>
+        </select>
+    </div>
+    <div class="date-filter">
+        <select>
+            <option value="Today">Today</option>
+            <option value="week">Past week</option>
+            <option value="month">Past month</option>
+        </select>
+    </div>
+
 <table>
     <tr>
         <th><input type="checkbox" id="selectAll">
@@ -699,6 +716,7 @@
         <th>Book request for:</th>
         <th>City:</th>
         <th>Package:</th>
+        <th>Status:</th>
         <th></th>
         <th></th>
     </tr>
@@ -712,6 +730,7 @@
         <td>27/01/2022 15:00</td>
         <td>Tbilisi</td>
         <td>Premium</td>
+        <td>pending</td>
         <td>  <button class="approve-button"><i class="fa fa-check" style="font-size:24px"></i></button> </td>
         <td>  <button class="decline-button"><i class="fa fa-remove" style="font-size:26px"></i></button> </td>
     </tr>
@@ -725,6 +744,7 @@
         <td>15/12/2021 16:00</td>
         <td>Batumi</td>
         <td>Basic</td>
+        <td>pending</td>
         <td>  <button class="approve-button"><i class="fa fa-check" style="font-size:24px"></i></button> </td>
         <td>  <button class="decline-button"><i class="fa fa-remove" style="font-size:26px"></i></button> </td>
     </tr>
@@ -738,6 +758,7 @@
         <td>15/12/2021 16:00</td>
         <td>Kutaisi</td>
         <td>Gold</td>
+        <td>approved</td>
         <td>  <button class="approve-button"><i class="fa fa-check" style="font-size:24px"></i></button> </td>
         <td>  <button class="decline-button"><i class="fa fa-remove" style="font-size:26px"></i></button> </td>
     </tr>
@@ -745,4 +766,5 @@
 
 </body>
 <script src="assets/js/calendar.js"></script>
-<script src="assets/js/panel.js"></script>tml>
+<script src="assets/js/panel.js"></script>
+</html>
