@@ -19,11 +19,14 @@ function handleDropDown() {
 
 handleDropDown();
 
-function preview_image(event) {
+
+
+function preview_image(event, elementId) {
     let reader = new FileReader();
     reader.onload = function()   {
-        let output = document.getElementById('output_image');
+        let output = document.getElementById(elementId);
         output.src = reader.result;
+        output.style.display = "block";
         output.style.border = "solid red 3px";
     }
     reader.readAsDataURL(event.target.files[0]);

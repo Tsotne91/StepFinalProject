@@ -73,7 +73,8 @@
                     <label for="photo-link"></label>
                     <input type="url" id="photo-link" name="photo-link" placeholder="Insert Photo Link Here">
                     <label for="upload-photo">Upload photo:</label>
-                    <input type="file" id="upload-photo">
+                    <input type="file" id="upload-photo" onchange="preview_image(event, 'add-photo-upload' )">
+                    <img id="add-photo-upload" alt="">
                     <button>submit</button>
                 </div>
             </div>
@@ -141,7 +142,7 @@
             <div id="about">
                 <div id="filler_bottom"></div>
                 <div id="about-photo-item">
-                    <input type="file" accept="image/*" onchange="preview_image(event)" id="upload" hidden/>
+                    <input type="file" accept="image/*" onchange="preview_image(event, 'output_image')" id="upload" hidden/>
                     <label for="upload" class="fa fa-upload" id="upload-button"> Upload</label>
                     <img id="output_image" src="../assets/images/owner.jpg" alt="">
                 </div>

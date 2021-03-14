@@ -11,9 +11,12 @@
         main {
             text-align: center;
         }
-        img {
+        img, #photo-upload {
             width: 30vw;
             height: 20vw;
+        }
+        #photo-upload {
+            margin: 0 auto;
         }
         input {
             width: 30vw;
@@ -69,11 +72,12 @@
     </ul>
 </div>
 <main>
-    <input type="file" id="upload" hidden/>
+    <input type="file" id="upload" onchange="preview_image(event, 'photo-upload')" hidden/>
     <label for="upload" class="fa fa-upload" id="upload-button"> Upload</label><br>
-<img src="img/main.jpg" alt="main-photo"><br>
+<img src="img/main.jpg" alt="main-photo" id="photo-upload"><br>
     <input type="url" placeholder="Insert link here"><br>
 <button><i class="fa fa-save"> Save</i></button>
 </main>
 </body>
+<script src="assets/js/panel.js"></script>
 </html>

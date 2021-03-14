@@ -74,6 +74,10 @@
     padding: 10px;
     width: 80%;
 }
+#add-photo-upload {
+    width: 450px;
+    height: auto;
+}
 
 .pic-holder {
     width: 70px;

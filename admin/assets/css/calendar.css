@@ -164,3 +164,7 @@ th, td {
     color: #c60101;
     padding-bottom: 3px;
 }
+th i {
+    position: relative;
+    bottom: 3px;
+}
